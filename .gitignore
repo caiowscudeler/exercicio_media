@@ -1,23 +1,27 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+import java.util.Scanner;
+public class HelloWorld {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner (System.in);
+        double n1, n2, n3, n4;
+        System.out.print("Informe sua nota da AC1: ");
+        n1 = ler.nextDouble();
+        System.out.print("Informe sua nota da AC2: ");
+        n2 = ler.nextDouble();
+        System.out.print("Informe sua nota da AG: ");
+        n3 = ler.nextDouble();
+        System.out.print("Informe sua nota da AF: ");
+        n4 = ler.nextDouble();
+        
+        double n5 = ((n1*0.15) + (n2*0.3) + (n3*0.1) + (n4*0.45));
+        
+  
+        
+        
+        if (n5>5){
+            System.out.print("Voce foi aprovado: " + n5);
+        }
+        else {
+            System.out.print("Voce foi reprovado: " + n5 );
+        }
+    }
+}
