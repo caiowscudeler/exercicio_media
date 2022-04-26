@@ -1,0 +1,2 @@
+# exercicio_media
+E
